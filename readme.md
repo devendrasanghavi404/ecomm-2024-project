@@ -1,4 +1,6 @@
-E-Commerce Project
+Feb 10 2024
+E-commerce Website using React and Springboot
+
 
 Users
 Roles-> Admins, Super Users, Users, User Preferences
@@ -89,6 +91,8 @@ Updated Id
 
 
 Softwares required
+
+
 
 
 
