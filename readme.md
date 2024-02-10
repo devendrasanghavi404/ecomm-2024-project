@@ -2,7 +2,9 @@
 Feb 10, 2024
 E-commerce Website using React and Springboot
 
-
+LINKS : 
+https://fabric.inc/blog/commerce/ecommerce-database-design-example
+https://hygraph.com/blog/ecommerce-microservices-architecture
 
 Users
 Roles-> Admins, Super Users, Users, User Preferences
