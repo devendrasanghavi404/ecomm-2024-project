@@ -92,7 +92,8 @@ Updated Id
 
 Softwares required
 
-
+localhost:8081/swagger-ui/index.html
+localhost:8081/h2-console
 
 
 
