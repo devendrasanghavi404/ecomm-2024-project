@@ -1,6 +1,6 @@
 package com.shop.app.controller;
 
-import com.shop.app.dto.request.*;
+import com.shop.app.dto.request.NewProductRequestDTO;
 import com.shop.app.service.impl.ProductProcessServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "api/v1/")
 @RequiredArgsConstructor
 public class ProductController {
-
     @Autowired
     private ProductProcessServiceImpl productProcessService;
 

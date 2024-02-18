@@ -1,7 +1,7 @@
 package com.shop.app.mapper;
 
-import com.shop.app.domain.Product;
 import com.shop.app.domain.Brand;
+import com.shop.app.domain.Product;
 
 public class ProductToBrandMapper {
 

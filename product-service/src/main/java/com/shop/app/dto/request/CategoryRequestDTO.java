@@ -2,8 +2,6 @@ package com.shop.app.dto.request;
 
 import lombok.*;
 
-import java.util.Set;
-
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor

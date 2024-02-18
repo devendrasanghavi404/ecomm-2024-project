@@ -1,7 +1,7 @@
 package com.shop.app.mapper;
 
-import com.shop.app.domain.Product;
 import com.shop.app.domain.Category;
+import com.shop.app.domain.Product;
 
 public class ProductToCategoryMapper {
 

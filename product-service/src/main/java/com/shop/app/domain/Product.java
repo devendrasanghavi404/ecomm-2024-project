@@ -6,14 +6,15 @@ import lombok.*;
 import java.io.Serializable;
 import java.time.Instant;
 
-@Entity
-@Table(name = "tb_products")
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
 @Builder
+@Entity
+@Table(name = "tb_products")
 public class Product implements Serializable {
 
     @Id
@@ -29,17 +30,17 @@ public class Product implements Serializable {
     private Instant createdAt;
     private Instant modifiedAt;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "brand_id")
+    @ManyToOne
+    @JoinColumn(name = "fk_brand_id")
     private Brand brand;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
+    @ManyToOne
+    @JoinColumn(name = "fk_category_id")
     private Category category;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "sub_category_id")
-    private SubCategory subCategory; // Assuming there's a property like this in your Product entity
+    @ManyToOne
+    @JoinColumn(name = "fk_sub_category_id")
+    private SubCategory subCategory;
 
 
 }

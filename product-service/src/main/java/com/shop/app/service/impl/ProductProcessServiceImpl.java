@@ -17,7 +17,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
-import java.util.HashSet;
 
 @Service
 @RequiredArgsConstructor
@@ -33,12 +32,11 @@ public class ProductProcessServiceImpl {
         Brand brand = mapToBrand(newProductRequestDTO.getBrand());
         Category category = mapToCategory(newProductRequestDTO.getCategory());
         SubCategory subCategory = mapToSubCategory(newProductRequestDTO.getSubCategory());
-
         // Set associations
-        category.getSubCategories().add(subCategory);
-        brand.getCategories().add(category);
+        subCategory.setCategory(category);
         product.setCategory(category);
         product.setBrand(brand);
+        product.setSubCategory(subCategory);
         // Save the Product
         productRepository.save(product);
 
